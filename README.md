@@ -1,4 +1,4 @@
-[![Logo](/vex_snippets_logo.png)](https://github.com/Kuchavo/VEX-Snippets)
+[![Logo](/img/vex_snippets_logo.png)](https://github.com/Kuchavo/VEX-Snippets)
 
 # VEX-Snippets
 A collection of useful snippets for Houdini.
@@ -31,11 +31,7 @@ Replacing primitives with points and adding points at each of their centers.
 <details>
 <summary>Example</summary>
 
-<<<<<<< HEAD
-<img src="/img/inCenterOfPrimitives.jpg" height="300px"/>
-=======
 <img src="/img/inCenterOfPrimitives.jpg" width="1000px;"/>
->>>>>>> 6106906d5c422eabdf3297370c4f4d7e760903ed
 
 </details>
 
