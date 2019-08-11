@@ -22,7 +22,7 @@ A collection of useful snippets for Houdini.
 <summary>View contents</summary>
 
 * [`cameraFrustrum`](#camerafrustrum)
-* [`cameraFrustrum`](#camerafrustrum)
+* [`silhouetteRetain`](#silhouetteretain)
 
 </details>
 
@@ -74,7 +74,7 @@ if (pos.y > 1-ch('overUp')) removepoint(0, @ptnum);
 Preserves the silhouette of the geometry in the selected camera, regardless of its distance.
 
 ```c
-// Silhouette Saver [Point Wrangle]
+// Silhouette Retain [Point Wrangle]
 vector pos = toNDC("/obj/cam1", @P);
 pos.z += ch("offset");
 @P = fromNDC("/obj/cam1", pos);
