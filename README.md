@@ -54,8 +54,8 @@ Cut geometry from selected camera with the ability to crop.
 ```c
 // Camera Frustrum [Point Wrangle]
 vector pos = toNDC("/obj/cam1", @P);
-if (pos.x < 0+ch('overleft')) removepoint(0, @ptnum);
-if (pos.x > 1-ch('overright')) removepoint(0, @ptnum);
+if (pos.x < 0+ch('overLeft')) removepoint(0, @ptnum);
+if (pos.x > 1-ch('overRight')) removepoint(0, @ptnum);
 if (pos.y < 0+ch('overDown')) removepoint(0, @ptnum);
 if (pos.y > 1-ch('overUp')) removepoint(0, @ptnum);
 ```
