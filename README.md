@@ -31,7 +31,7 @@ Replacing primitives with points and adding points at each of their centers.
 <details>
 <summary>Example</summary>
 
-[<img src="https://github.com/Chalarangelo.png" width="100px;"/>]
+[<img src="/img/inCenterOfPrimitives.jpg" width="200px;"/>]
 
 </details>
 
