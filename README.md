@@ -3,6 +3,8 @@
 # VEX-Snippets
 A collection of useful snippets for Houdini.
 
+⚠️ **Сurrently repository in development.**
+
 ## Geometry
 
 ### Points
