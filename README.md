@@ -60,7 +60,7 @@ Assigning a point to a group. If points’ position on X axis is more than 0, as
 <details>
 <summary>Example</summary>
 
-<img src="/img/point_inCenterOfPrimitives.jpg" width="2000px;"/>
+<img src="/img/point_pointsInAGroup.jpg" width="2000px;"/>
 
 </details>
 
