@@ -45,7 +45,6 @@ Replacing primitives with points and adding points at each of their centers.
 <img src="/img/point_inCenterOfPrimitives.jpg" width="2000px;"/>
 
 </details>
-
 <br>[⬆ Back to top](#geometry)
 
 ### pointsInAGroup
@@ -63,7 +62,6 @@ Assigning a point to a group. If points’ position on X axis is more than 0, as
 <img src="/img/point_pointsInAGroup.jpg" width="2000px;"/>
 
 </details>
-
 <br>[⬆ Back to top](#geometry)
 
 ### cameraFrustrum
@@ -85,7 +83,6 @@ if (pos.y > 1-ch('overUp')) removepoint(0, @ptnum);
 <img src="/img/cam_cameraFrustrum.jpg" width="2000px;"/>
 
 </details>
-
 <br>[⬆ Back to top](#geometry)
 
 ### silhouetteRetain
@@ -105,5 +102,4 @@ pos.z += ch("offset");
 <img src="/img/cam_silhouetteRetain.jpg" width="2000px;"/>
 
 </details>
-
 <br>[⬆ Back to top](#geometry)
