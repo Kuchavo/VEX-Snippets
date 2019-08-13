@@ -13,6 +13,7 @@ A collection of useful snippets for Houdini.
 <summary>View contents</summary>
 
 * [`inCenterOfPrimitives`](#incenterofprimitives)
+* [`pointsInAGroup`](#pointsinagroup)
 
 </details>
 
@@ -36,6 +37,24 @@ Replacing primitives with points and adding points at each of their centers.
 // Points in center [Primitive Wrangle]
   addpoint(0,@P);
   removeprim(0,@primnum,0);
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/point_inCenterOfPrimitives.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
+### pointsInAGroup
+
+Assigning a point to a group. If points’ position on X axis is more than 0, assign the point to the “mygroup”.
+
+```c
+// Points in a group [Point Wrangle]
+  if(@P.x>0) @group_mygroup = 1;
 ```
 
 <details>
