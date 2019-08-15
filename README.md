@@ -14,6 +14,8 @@ A collection of useful snippets for Houdini.
 
 * [`inCenterOfPrimitives`](#incenterofprimitives)
 * [`pointsInAGroup`](#pointsinagroup)
+* [`ToTestAPointGroupMembership`](#totestapointgroupmembership)
+
 
 </details>
 
@@ -22,7 +24,7 @@ A collection of useful snippets for Houdini.
 <details>
 <summary>View contents</summary>
 
-* [`cameraFrustrum`](#camerafrustrum)
+* [`cutGeoFromCamera`](#cutgeofromcamera)
 * [`silhouetteRetain`](#silhouetteretain)
 
 </details>
@@ -66,7 +68,25 @@ Assigning a point to a group. If points’ position on X axis is more than 0, as
 
 <br>[⬆ Back to top](#geometry)
 
-### cameraFrustrum
+### ToTestAPointGroupMembership
+
+Returns a boolean value whether a point is a member of specified group.
+
+```c
+// Points in a group [Point Wrangle]
+  i@ismember = inpointgroup(0, "group1", @ptnum);
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/point_ToTestAPointGroupMembership.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
+### cutGeoFromCamera
 
 Cut geometry from selected camera with the ability to crop.
 
