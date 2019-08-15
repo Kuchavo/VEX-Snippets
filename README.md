@@ -80,7 +80,11 @@ Returns a boolean value whether a point is a member of specified group.
 <details>
 <summary>Example</summary>
 
+<<<<<<< HEAD
 <img src="/img/point_ToTestAPointGroupMembership.jpg" width="2000px;"/>
+=======
+<img src="point_ToTestAPointGroupMembership.jpg" width="2000px;"/>
+>>>>>>> d3241d28954dab4da347d87b54e6487a5c39132e
 
 </details>
 
