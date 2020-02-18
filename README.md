@@ -15,6 +15,7 @@ A collection of useful snippets for Houdini.
 * [`inCenterOfPrimitives`](#incenterofprimitives)
 * [`pointsInAGroup`](#pointsinagroup)
 * [`ToTestAPointGroupMembership`](#totestapointgroupmembership)
+* [`inCenterOfPrimitives`](#sortofringpoints)
 
 
 </details>
@@ -30,6 +31,28 @@ A collection of useful snippets for Houdini.
 </details>
 
 ---
+
+### sortOfRingPoints
+
+Sorting circle points.
+
+```c
+//Sorting points in a circle (z and y axis) [Point Wrangle]
+vector center = getbbox_center(0);
+@P -= center;
+@grad = atan2(@P.z,@P.y);
+@P += center;
+// After that needing sort by attribute 'grad'
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/sortOfRingPoints.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
 
 ### inCenterOfPrimitives
 
