@@ -9,16 +9,23 @@ A collection of useful snippets for Houdini.
 
 ### Objects
 
+<details>
+<summary>View contents</summary>
+
+* [`helixCurve`](#helixcurve)
+
+</details>
+
 ### Points
 
 <details>
 <summary>View contents</summary>
 
+* [`sortOfRingPoints`](#sortofringpoints)
 * [`inCenterOfPrimitives`](#incenterofprimitives)
 * [`pointsInAGroup`](#pointsinagroup)
 * [`ToTestAPointGroupMembership`](#totestapointgroupmembership)
 * [`inCenterOfPrimitives`](#sortofringpoints)
-
 
 </details>
 
@@ -34,16 +41,42 @@ A collection of useful snippets for Houdini.
 
 ---
 
+### helixCurve
+
+Creation of helix from curve.
+
+```c
+// Creation of helix from curve [Point Wrangle]
+  float freq, amp;
+  vector pos = @P;
+
+  freq = chf("freq");
+  amp = chf("amp");
+
+  pos.x += sin(pos.y * freq) * amp;
+  pos.z += cos(pos.y * freq) * amp;
+  @P = pos;
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/helixCurve.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
 ### sortOfRingPoints
 
 Sorting circle points.
 
 ```c
 //Sorting points in a circle (z and y axis) [Point Wrangle]
-vector center = getbbox_center(0);
-@P -= center;
-@grad = atan2(@P.z,@P.y);
-@P += center;
+  vector center = getbbox_center(0);
+  @P -= center;
+  @grad = atan2(@P.z,@P.y);
+  @P += center;
 // After that needing sort by attribute 'grad'
 ```
 
