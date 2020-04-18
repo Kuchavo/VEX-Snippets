@@ -7,6 +7,8 @@ A collection of useful snippets for Houdini.
 
 ## Geometry
 
+### Objects
+
 ### Points
 
 <details>
