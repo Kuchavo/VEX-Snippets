@@ -64,17 +64,17 @@ A collection of useful snippets for Houdini.
 Create an array.
 
 ```c
-//local integer array of size 5
+// Local integer array of size 5
   int array[] = {0,1,2,3,4};
 ```
 
 ```c
-//global string array of size 2
+// Global string array of size 2
   s[]@array = {'example_0.rat', 'example_1.rat'};
 ```
 
 ```c
-//local string array of size 2
+// Local string array of size 2
   string array[] = {'example_0.rat', 'example_1.rat'};
 ```
 
@@ -85,11 +85,22 @@ Create an array.
 Generate an array.
 
 ```c
-//procedurally generated array of size 10
+// Procedurally generated array of size 10
   i[]@myarray;
   for(int i=0; i<10; i++){
       append(@myarray, i);
   }
+// Output: [ 0,1,2,3,4,5,6,7,8,9 ]
+```
+
+```c
+// Procedurally generated vector array of size '@numpt'
+    v[]@myarray;
+    for(int i=0; i<@numpt; i++){
+        vector item = point(0, 'P', i);
+        insert(@myarray, 0, item);
+    }
+// Output: [ (4.24242, 0.0, 5.0), (3.53535, 0.0, 5.0), etc. ]
 ```
 
 <br>[⬆ Back to top](#geometry)
