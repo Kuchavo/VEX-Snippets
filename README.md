@@ -48,7 +48,51 @@ A collection of useful snippets for Houdini.
 
 </details>
 
+### Arrays
+
+<details>
+<summary>View contents</summary>
+
+* [`createAnArray`](#createanarray)
+* [`generateAnArray`](#generateanarray)
+
+</details>
+
 ---
+### createAnArray
+
+Create an array.
+
+```c
+//local integer array of size 5
+  int array[] = {0,1,2,3,4};
+```
+
+```c
+//global string array of size 2
+  s[]@array = {'example_0.rat', 'example_1.rat'};
+```
+
+```c
+//local string array of size 2
+  string array[] = {'example_0.rat', 'example_1.rat'};
+```
+
+<br>[⬆ Back to top](#geometry)
+
+### generateAnArray
+
+Generate an array.
+
+```c
+//procedurally generated array of size 10
+  i[]@myarray;
+  for(int i=0; i<10; i++){
+      append(@myarray, i);
+  }
+```
+
+<br>[⬆ Back to top](#geometry)
 
 ### nGonsVisualize
 
