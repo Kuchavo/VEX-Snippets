@@ -124,7 +124,7 @@ Iterating over array elements (every second).
 <details>
 <summary>Example</summary>
 
-<img src="/img/nGonsVisualize.jpg" width="2000px;"/>
+<img src="/img/iteratingOverArrayElements.jpg" width="2000px;"/>
 
 </details>
 
