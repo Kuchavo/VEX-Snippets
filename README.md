@@ -12,6 +12,15 @@ A collection of useful snippets for Houdini.
 <details>
 <summary>View contents</summary>
 
+* [`nGonsVisualize`](#ngonsvisualize)
+
+</details>
+
+### Primitives
+
+<details>
+<summary>View contents</summary>
+
 * [`helixCurve`](#helixcurve)
 
 </details>
@@ -40,6 +49,26 @@ A collection of useful snippets for Houdini.
 </details>
 
 ---
+
+### nGonsVisualize
+
+Visualize of n-gons on geometry.
+
+```c
+// Visualize of n-gons on geometry [Primitive Wrangle]
+  if (primvertexcount(0, @primnum) < 4){
+    @Cd = set(0, 1, 0.2);
+  }
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/nGonsVisualize.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
 
 ### helixCurve
 
