@@ -55,6 +55,7 @@ A collection of useful snippets for Houdini.
 
 * [`createAnArray`](#createanarray)
 * [`generateAnArray`](#generateanarray)
+* [`iteratingOverArrayElements`](#iteratingoverarrayelements)
 
 </details>
 
@@ -102,6 +103,30 @@ Generate an array.
     }
 // Output: [ (4.24242, 0.0, 5.0), (3.53535, 0.0, 5.0), etc. ]
 ```
+
+<br>[⬆ Back to top](#geometry)
+
+### iteratingOverArrayElements
+
+Iterating over array elements (every second).
+
+```c
+// Need listing input primitive numbers on detail
+    int importarray[] = detail(0, 'prims');
+    foreach(int i; importarray){
+        if(i%2 == 0){
+            setprimattrib(0, 'Cd', i, {0,1,0.2});
+        }
+    }
+
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/nGonsVisualize.jpg" width="2000px;"/>
+
+</details>
 
 <br>[⬆ Back to top](#geometry)
 
