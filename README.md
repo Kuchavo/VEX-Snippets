@@ -12,7 +12,7 @@ A collection of useful snippets for Houdini.
 <details>
 <summary>View contents</summary>
 
-* [`nGonsVisualize`](#ngonsvisualize)
+* [`helixCurve`](#helixcurve)
 
 </details>
 
@@ -21,7 +21,7 @@ A collection of useful snippets for Houdini.
 <details>
 <summary>View contents</summary>
 
-* [`helixCurve`](#helixcurve)
+* [`nGonsVisualize`](#ngonsvisualize)
 
 </details>
 
