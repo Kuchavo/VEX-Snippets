@@ -34,7 +34,7 @@ A collection of useful snippets for Houdini.
 <summary>View contents</summary>
 
 * [`ToTestAVertexGroupMembership`](#totestavertexgroupmembership)
-* [`VerticesInGroupCounter`](#verteicsingroupcounter)
+* [`VerticesInGroupCounter`](#verticesingroupcounter)
 * [`VerticesListInGroup`](#verticeslistingroup)
 
 </details>
