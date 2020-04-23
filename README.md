@@ -93,7 +93,9 @@ A collection of useful snippets for Houdini.
 * [`VerticesListInGroup`](#verticeslistingroup)
 
 </details>
+
 ---
+
 ### createAGroup
 
 Create a group.
