@@ -22,6 +22,20 @@ A collection of useful snippets for Houdini.
 <summary>View contents</summary>
 
 * [`nGonsVisualize`](#ngonsvisualize)
+* [`ToTestAPrimitiveGroupMembership`](#totestaprimitivegroupmembership)
+* [`PrimitivesInGroupCounter`](#primitivesingroupcounter)
+* [`PrimitivesListInGroup`](#primitiveslistingroup)
+
+</details>
+
+### Vertices
+
+<details>
+<summary>View contents</summary>
+
+* [`ToTestAVertexGroupMembership`](#totestavertexgroupmembership)
+* [`VerticesInGroupCounter`](#verteicsingroupcounter)
+* [`VerticesListInGroup`](#verticeslistingroup)
 
 </details>
 
@@ -34,6 +48,8 @@ A collection of useful snippets for Houdini.
 * [`inCenterOfPrimitives`](#incenterofprimitives)
 * [`pointsInAGroup`](#pointsinagroup)
 * [`ToTestAPointGroupMembership`](#totestapointgroupmembership)
+* [`PointsInGroupCounter`](#pointsingroupcounter)
+* [`PointsListInGroup`](#pointslistingroup)
 * [`inCenterOfPrimitives`](#sortofringpoints)
 
 </details>
@@ -59,7 +75,129 @@ A collection of useful snippets for Houdini.
 
 </details>
 
+### Groups
+
+<details>
+<summary>View contents</summary>
+
+* [`createAGroup`](#createagroup)
+* [`pointsInAGroup`](#pointsinagroup)
+* [`ToTestAPointGroupMembership`](#totestapointgroupmembership)
+* [`ToTestAPrimitiveGroupMembership`](#totestaprimitivegroupmembership)
+* [`ToTestAVertexGroupMembership`](#totestavertexgroupmembership)
+* [`PointsInGroupCounter`](#pointsingroupcounter)
+* [`PrimitivesInGroupCounter`](#primitivesingroupcounter)
+* [`VerticesInGroupCounter`](#verticesingroupcounter)
+* [`PointsListInGroup`](#pointslistingroup)
+* [`PrimitivesListInGroup`](#primitiveslistingroup)
+* [`VerticesListInGroup`](#verticeslistingroup)
+
+</details>
 ---
+### createAGroup
+
+Create a group.
+
+```c
+// Creation of group called 'mask' (@group_ is a virtual attribute)
+  i@group_mask = 1;
+```
+
+```c
+// Creation of group 'mygroup' for each point [Point Wrangle]
+  setpointgroup(0, "mygroup", @ptnum, 1);
+```
+
+```c
+// Creation of group 'mygroup' for each primitive [Primitive Wrangle]
+  setprimgroup(0, "mygroup", @primnum, 1);
+```
+
+```c
+// Creation of group 'mygroup' for each vertex [Vertex Wrangle]
+  setvertexgroup(0, "mygroup", @primnum, 1);
+```
+
+```c
+// Creation of group 'mygroup' for each edge between
+// @primnum and @primnum+1 [Attribute Wrangle with Edges Group Type]
+  setedgegroup(0, "mygroup", @primnum, @primnum+1, 1);
+```
+<details>
+<summary>Example</summary>
+
+<img src="/img/createAGroup_setedgegroup.png" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
+### PointsInGroupCounter
+
+Shows how many elements in a group.
+
+```c
+// Points in a group ('mygroup') counter [Point Wrangle]
+  i@count = npointsgroup(0, 'mygroup');
+```
+
+<br>[⬆ Back to top](#geometry)
+
+### PrimitivesInGroupCounter
+
+Shows how many elements in a group.
+
+```c
+// Points in a group ('mygroup') counter [Point Wrangle]
+  i@count = nprimitivesgroup(0, 'mygroup');
+```
+
+<br>[⬆ Back to top](#geometry)
+
+### VerticesInGroupCounter
+
+Shows how many elements in a group.
+
+```c
+// Points in a group ('mygroup') counter [Point Wrangle]
+  i@count = nverticesgroup(0, 'mygroup');
+```
+
+<br>[⬆ Back to top](#geometry)
+
+### PointsListInGroup
+
+Creation of list of points numbers in a group.
+
+```c
+// List of points in a group [Point Wrangle]
+  i[]@list = expandpointgroup(0, 'mygroup');
+```
+
+<br>[⬆ Back to top](#geometry)
+
+### PrimitivesListInGroup
+
+Creation of list of primitives numbers in a group.
+
+```c
+// List of primitives in a group [Primitive Wrangle]
+  i[]@list = expandprimgroup(0, 'mygroup');
+```
+
+<br>[⬆ Back to top](#geometry)
+
+### VerticesListInGroup
+
+Creation of list of vertices numbers in a group.
+
+```c
+// List of primitives in a group [Vertex Wrangle]
+  i[]@list = expandvertexgroup(0, 'mygroup');
+```
+
+<br>[⬆ Back to top](#geometry)
+
 ### createAnArray
 
 Create an array.
@@ -248,6 +386,42 @@ Returns a boolean value whether a point is a member of specified group.
 <summary>Example</summary>
 
 <img src="/img/point_ToTestAPointGroupMembership.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
+### ToTestAPrimitiveGroupMembership
+
+Returns a boolean value whether a primitive is a member of specified group.
+
+```c
+// Primitive in a group [Primitive Wrangle]
+  i@ismember = inprimgroup(0, "group1", @primnum);
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/prim_ToTestAPrimitiveGroupMembership.png" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
+### ToTestAVertexGroupMembership
+
+Returns a boolean value whether a vertex is a member of specified group.
+
+```c
+// Vertex in a group [Vertex Wrangle]
+  i@ismember = invertexgroup(0, "group1", @vtxnum);
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="/img/vtx_ToTestAVertexGroupMembership.png" width="2000px;"/>
 
 </details>
 
