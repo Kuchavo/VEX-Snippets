@@ -19,7 +19,7 @@ A collection of useful snippets for Houdini.
 ### Primitives
 
 <details>
-<summary>View contents</summary>
+<summary>View contents</summary> 
 
 * [`nGonsVisualize`](#ngonsvisualize)
 * [`ToTestAPrimitiveGroupMembership`](#totestaprimitivegroupmembership)
