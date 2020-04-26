@@ -19,7 +19,7 @@ A collection of useful snippets for Houdini.
 ### Primitives
 
 <details>
-<summary>View contents</summary> 
+<summary>View contents</summary>
 
 * [`nGonsVisualize`](#ngonsvisualize)
 * [`ToTestAPrimitiveGroupMembership`](#totestaprimitivegroupmembership)
@@ -97,7 +97,7 @@ A collection of useful snippets for Houdini.
 * [`PointGroupsList`](#pointgroupslist)
 * [`PrimitiveGroupsList`](#primitivegroupslist)
 * [`VertexGroupsList`](#vertexgroupslist)
-* [`EdgeGroupsList`](#edgegroupslist)
+* [`EdgeGroupsList`](#edgegroupslist) 
 
 </details>
 
