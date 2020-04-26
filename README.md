@@ -97,7 +97,7 @@ A collection of useful snippets for Houdini.
 * [`PointGroupsList`](#pointgroupslist)
 * [`PrimitiveGroupsList`](#primitivegroupslist)
 * [`VertexGroupsList`](#vertexgroupslist)
-* [`EdgeGroupsList`](#edgegroupslist)
+* [`EdgeGroupsList`](#edgegroupslist) 
 
 </details>
 
