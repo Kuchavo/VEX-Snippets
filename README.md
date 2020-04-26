@@ -25,6 +25,7 @@ A collection of useful snippets for Houdini.
 * [`ToTestAPrimitiveGroupMembership`](#totestaprimitivegroupmembership)
 * [`PrimitivesInGroupCounter`](#primitivesingroupcounter)
 * [`PrimitivesListInGroup`](#primitiveslistingroup)
+* [`PrimitiveGroupsList`](#primitivegroupslist)
 
 </details>
 
@@ -36,6 +37,7 @@ A collection of useful snippets for Houdini.
 * [`ToTestAVertexGroupMembership`](#totestavertexgroupmembership)
 * [`VerticesInGroupCounter`](#verticesingroupcounter)
 * [`VerticesListInGroup`](#verticeslistingroup)
+* [`VertexGroupsList`](#vertexgroupslist)
 
 </details>
 
@@ -51,6 +53,7 @@ A collection of useful snippets for Houdini.
 * [`PointsInGroupCounter`](#pointsingroupcounter)
 * [`PointsListInGroup`](#pointslistingroup)
 * [`inCenterOfPrimitives`](#sortofringpoints)
+* [`PointGroupsList`](#pointgroupslist)
 
 </details>
 
@@ -91,6 +94,10 @@ A collection of useful snippets for Houdini.
 * [`PointsListInGroup`](#pointslistingroup)
 * [`PrimitivesListInGroup`](#primitiveslistingroup)
 * [`VerticesListInGroup`](#verticeslistingroup)
+* [`PointGroupsList`](#pointgroupslist)
+* [`PrimitiveGroupsList`](#primitivegroupslist)
+* [`VertexGroupsList`](#vertexgroupslist)
+* [`EdgeGroupsList`](#edgegroupslist)
 
 </details>
 
@@ -165,6 +172,46 @@ Shows how many elements in a group.
   i@count = nverticesgroup(0, 'mygroup');
 ```
 
+<br>[⬆ Back to top](#geometry)
+
+### PointGroupsList
+
+Returns a string array of existing point groups.
+
+```c
+// Array of existing point groups
+  s[]@list = detailintrinsic(0, 'pointgroups');
+```
+<br>[⬆ Back to top](#geometry)
+
+### PrimGroupsList
+
+Returns a string array of existing primitive groups.
+
+```c
+// Array of existing primitive groups
+  s[]@list = detailintrinsic(0, 'primitivegroups');
+```
+<br>[⬆ Back to top](#geometry)
+
+### VertexGroupsList
+
+Returns a string array of existing vertex groups.
+
+```c
+// Array of existing vertex groups
+  s[]@list = detailintrinsic(0, 'vertexgroups');
+```
+<br>[⬆ Back to top](#geometry)
+
+### EdgeGroupsList
+
+Returns a string array of existing edge groups.
+
+```c
+// Array of existing edge groups
+  s[]@list = detailintrinsic(0, 'edgegroups');
+```
 <br>[⬆ Back to top](#geometry)
 
 ### PointsListInGroup
