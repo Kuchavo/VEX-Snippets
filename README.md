@@ -54,6 +54,16 @@ A collection of useful snippets for Houdini.
 * [`PointsListInGroup`](#pointslistingroup)
 * [`inCenterOfPrimitives`](#sortofringpoints)
 * [`PointGroupsList`](#pointgroupslist)
+* [`circleOutOfCenterNormals`](#circleoutofcenternormals)
+
+</details>
+
+### Normals
+
+<details>
+<summary>View contents</summary>
+
+* [`circleOutOfCenterNormals`](#circleoutofcenternormals)
 
 </details>
 
@@ -113,6 +123,26 @@ A collection of useful snippets for Houdini.
 </details>
 
 ---
+
+### circleOutOfCenterNormals
+
+Sets normals in direction from center of circle (start of coordinate system (0,0,0)).
+
+```c
+// Sets normals in direction from center of circle [Point Wrangle]
+  vector k = set(0,0,0);
+  v@N = normalize(k+@P);
+
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="img/normals_circleOutOfCenterNormals.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
 
 ### geoWithoutLighting
 
