@@ -98,10 +98,36 @@ A collection of useful snippets for Houdini.
 * [`PrimitiveGroupsList`](#primitivegroupslist)
 * [`VertexGroupsList`](#vertexgroupslist)
 * [`EdgeGroupsList`](#edgegroupslist)
+* [`GroupExpand`](#groupexpand)
 
 </details>
 
 ---
+
+### GroupExpand
+
+Uniformly expanding group by a specified distance.
+
+```c
+// Need a group filter ('group1') [Point Wrangle]
+  int pc = pcopen(0, 'P', @P, ch('radius'), chi('maxpts'));
+  while (pciterate(pc) > 0)
+  {
+    int currentpt;
+    pcimport(pc, 'point.number', currentpt);
+    setpointgroup(0, 'group1', currentpt, 1);
+  }
+
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="img/groups_GroupExpand.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
 
 ### createAGroup
 
