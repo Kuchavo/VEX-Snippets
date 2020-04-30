@@ -54,7 +54,6 @@ A collection of useful snippets for Houdini.
 * [`PointsListInGroup`](#pointslistingroup)
 * [`inCenterOfPrimitives`](#sortofringpoints)
 * [`PointGroupsList`](#pointgroupslist)
-* [`circleOutOfCenterNormals`](#circleoutofcenternormals)
 
 </details>
 
@@ -122,7 +121,27 @@ A collection of useful snippets for Houdini.
 
 </details>
 
+## Math
+
+<details>
+<summary>View contents</summary>
+
+* [`remapRandom-11`](#remaprandom-11)
+
+</details>
+
 ---
+
+### remapRandom-11
+
+Remapping random from 0:1 to -1:1.
+
+```c
+// Remaping random from 0:1 to -1:1 [Point Wrangle]
+  float random = rand(@ptnum)*2-1;
+```
+
+<br>[⬆ Back to top](#geometry)
 
 ### circleOutOfCenterNormals
 
