@@ -102,7 +102,55 @@ A collection of useful snippets for Houdini.
 
 </details>
 
+### Viewport
+
+<details>
+<summary>View contents</summary>
+
+* [`wireframeInViewport`](#wireframeinviewport)
+* [`geoWithoutLighting`](#geowithoutlighting)
+
+</details>
+
 ---
+
+### geoWithoutLighting
+
+Sets a geometry to always appear without lighting in scene.
+
+```c
+// Set true (1) for ON and false (0) for OFF. Need Detail in Run Over [Attribute Wrangle]
+  @gl_lit = 1;
+
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="img/viewport_geoWithoutLighting.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
+
+### wireframeInViewport
+
+Showing a geometry as wireframes.
+
+```c
+// Set true (1) for ON and false (0) for OFF. Need Detail in Run Over [Attribute Wrangle]
+  @gl_wireframe = 1;
+
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="img/viewport_WireframeInViewport.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
 
 ### GroupExpand
 
