@@ -57,7 +57,7 @@ A collection of useful snippets for Houdini.
 
 </details>
 
-### Camera
+## Camera
 
 <details>
 <summary>View contents</summary>
@@ -67,7 +67,7 @@ A collection of useful snippets for Houdini.
 
 </details>
 
-### Arrays
+## Arrays
 
 <details>
 <summary>View contents</summary>
@@ -78,7 +78,7 @@ A collection of useful snippets for Houdini.
 
 </details>
 
-### Groups
+## Groups
 
 <details>
 <summary>View contents</summary>
@@ -102,7 +102,7 @@ A collection of useful snippets for Houdini.
 
 </details>
 
-### Viewport
+## Viewport
 
 <details>
 <summary>View contents</summary>
