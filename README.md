@@ -154,7 +154,7 @@ Mask creation from metaball.
 <details>
 <summary>Example</summary>
 
-<img src="img/mask_maskFromMetaball.jpg" width="2000px;"/>
+<img src="img/mask_maskFromMetaball.JPG" width="2000px;"/>
 
 </details>
 
