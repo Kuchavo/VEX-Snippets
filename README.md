@@ -130,7 +130,35 @@ A collection of useful snippets for Houdini.
 
 </details>
 
+## Masks
+
+<details>
+<summary>View contents</summary>
+
+* [`maskFromMetaball`](#maskFromMetaball)
+
+</details>
+
 ---
+### maskFromMetaball
+
+Mask creation from metaball.
+
+```c
+// Mask from metaball [Point Wrangle]
+  f@mask = clamp(metaweight(@OpInput2,@P),0,1);
+  @Cd = f@mask;
+
+```
+
+<details>
+<summary>Example</summary>
+
+<img src="img/mask_maskFromMetaball.jpg" width="2000px;"/>
+
+</details>
+
+<br>[⬆ Back to top](#geometry)
 
 ### remapRandom-11
 
