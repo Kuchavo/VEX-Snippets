@@ -668,3 +668,9 @@ pos.z += ch("offset");
 </details>
 
 <br>[⬆ Back to top](#geometry)
+
+EXPRESSIONS
+<details>
+<summary>Getting digit in naming of current node (STR)</summary>
+`opdigits($OS)`
+</details>
