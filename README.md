@@ -3,6 +3,8 @@
 # VEX-Snippets
 A collection of useful snippets for Houdini.
 
+Built with ❤️ by [Kuchavo](https://github.com/Kuchavo)
+
 ⚠️ **Сurrently repository in development.**
 
 ## Geometry
@@ -675,4 +677,3 @@ pos.z += ch("offset");
 atof(opdigits($OS))
 </details>
 
-Built with ❤️ by [Kuchavo](https://github.com/Kuchavo)
