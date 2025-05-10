@@ -674,3 +674,5 @@ pos.z += ch("offset");
 <summary>Getting digit in naming of current node (STR)</summary>
 atof(opdigits($OS))
 </details>
+
+Built with ❤️ by [Kuchavo](https://github.com/Kuchavo)
